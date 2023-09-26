@@ -1,0 +1,673 @@
+fileFormatVersion: 2
+guid: 70053ca25a0d8c747996928d46fa5d3b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: leao_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 533.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8aa58432c1be5478baacbd6ef003fd
+      internalID: 2043922856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 533.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9969779d0b435ab4db3c0a4254b50fba
+      internalID: 1688675737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_2
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 533.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97e73a447130a9499d60153a3b5e835
+      internalID: 1673972621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_3
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 533.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8950674878035f46b70e52022bc2fd5
+      internalID: -1265260008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_4
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 533.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14366d59a64116844aa3b9581191c4a8
+      internalID: -1019998398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558eb53728b4da8499986337f74da1c1
+      internalID: 1476978729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_6
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 400.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e534386c5e7e2458430a205ae5e1af
+      internalID: -1922414316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_7
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 400.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7621ed6a5c2a6498294060465311a5
+      internalID: 60900082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_8
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 400.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ab891c6c03bde42985ffca13bda1a7
+      internalID: -415258476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_9
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 400.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3e6d7702460e749ad7931987aa16fa
+      internalID: -1406727448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 267.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f264a43de6fa8d4eb2674144065f955
+      internalID: 238079704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_11
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 267.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6270cdda19f139f4f92e0b791573b100
+      internalID: 1708772397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_12
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 267.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4aea518a66f3714ca8231ca614d6e0f
+      internalID: -189812993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_13
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 267.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d5b09bdb7f2e540b57fe040df1ab7e
+      internalID: -95925392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_14
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 267.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ea00aba60ed4b4bae8aa4a9aee39a3
+      internalID: -776137762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 134.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb97f72bad74904488111974081b7d57
+      internalID: 1083433310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_16
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 134.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c297a610b8dbc2d44bb9e57c498cad2b
+      internalID: 1135374439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_17
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 134.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441ad4c9dbaedc04c81d8e55ccaa22bc
+      internalID: -1834571607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_18
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 134.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a977a4dcdde72945a1474e56bb5100d
+      internalID: -948540796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_19
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 134.6
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9845a091a396b3f4ea0c8172348c3a42
+      internalID: -352184182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.6000061
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b885b0a7db7894e825d7efa14f9567
+      internalID: 1422986898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_21
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1.6000061
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527fc0f754bcb6645a7bccfe36d2a471
+      internalID: -32557730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_22
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1.6000061
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf5715e047922844bf2bd19e581b98f
+      internalID: -478611319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_23
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 1.6000061
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4057213648329e04ea0e823bb054257f
+      internalID: -947982131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leao_24
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1.6000061
+        width: 129.6
+        height: 133.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3b1cfcc64a25d43ba043d858b8b117
+      internalID: -644187748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: df7a7bfaa0bf9184ba4ff3cf522001a7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      leao_0: 2043922856
+      leao_1: 1688675737
+      leao_10: 238079704
+      leao_11: 1708772397
+      leao_12: -189812993
+      leao_13: -95925392
+      leao_14: -776137762
+      leao_15: 1083433310
+      leao_16: 1135374439
+      leao_17: -1834571607
+      leao_18: -948540796
+      leao_19: -352184182
+      leao_2: 1673972621
+      leao_20: 1422986898
+      leao_21: -32557730
+      leao_22: -478611319
+      leao_23: -947982131
+      leao_24: -644187748
+      leao_3: -1265260008
+      leao_4: -1019998398
+      leao_5: 1476978729
+      leao_6: -1922414316
+      leao_7: 60900082
+      leao_8: -415258476
+      leao_9: -1406727448
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
