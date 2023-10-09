@@ -11,7 +11,6 @@ public class DragAndDrop : MonoBehaviour
     }
 
     public void Drag() {
-        // GameObject.Find("Image").transform.position = Input.mousePosition;
         print("Arrastando" + gameObject.name);
         gameObject.transform.position = Input.mousePosition;
     }
@@ -29,8 +28,6 @@ public class DragAndDrop : MonoBehaviour
     }
 
     public void checkMatch() {
-        // GameObject lm1 = GameObject.Find("LM1");
-        // GameObject img = GameObject.Find("Image");
         GameObject img = gameObject;
         string tag = gameObject.tag;
         GameObject lm1 = GameObject.Find("LM" + tag);
@@ -43,5 +40,9 @@ public class DragAndDrop : MonoBehaviour
         else 
             moveBack();
 
+    }
+
+    public void posicaoInicialPartes() {
+        posicaoOriginal = transform.position;
     }
 }
