@@ -12,6 +12,7 @@ public class Carta : MonoBehaviour
     public GameObject back = null; // GameObject da traseira da carta
     SpriteRenderer _tSR = null;
     public SpriteRenderer[] spriteRenderers;
+    public bool cartaGold = false;
 
     public bool faceUp { // Dupla função get e set, usaremos na sequência
         get { return(!back.activeSelf); }

@@ -7,7 +7,7 @@ public enum eCartaState
     monte,
     tablado,
     target,
-    descarte
+    descarte,
 }
 
 public class CartaGarimpeiro : Carta {
@@ -16,7 +16,7 @@ public class CartaGarimpeiro : Carta {
     public List<CartaGarimpeiro> hiddenBy = new List<CartaGarimpeiro>();
     public int layoutID;
     public SlotDef slotDef;
-
+    
     override public void OnMouseDown() {
         Garimpeiro.S.CartaClicada(this);
     }

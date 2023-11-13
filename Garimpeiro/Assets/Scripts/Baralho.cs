@@ -6,6 +6,7 @@ public class Baralho : MonoBehaviour
 {
     public bool startFaceUp = true; // Inicialização das cartas abertas
     public GameObject prefabCarta; // Deverá associar aqui o prefab configurado para a Face da carta
+    public GameObject prefabCartaGold;
     public GameObject prefabSprite; // Associar aqui o prefab configurado para a traseira da carta
 
 [Header("Set Dynamically")]
@@ -33,6 +34,7 @@ public class Baralho : MonoBehaviour
     /* Método que descarta todas as cartas do Baralho, mostrando-as ou não */
     public void DescartaBaralho(bool flagMostra) {
         nomesCartas = new List<string>();
+
         string[] letras = new string[] {"C", "O", "E", "P"}; // Iniciais dos naipes
         foreach (string s in letras) {
             for (int i = 0; i < 13; i++) {
@@ -41,13 +43,18 @@ public class Baralho : MonoBehaviour
         }
         cartasBaralho = new List<Carta>(); // todas as cartas do baralho
         for (int i = 0; i < nomesCartas.Count; i++) {
-            cartasBaralho.Add(MakeCarta(flagMostra, i));
+            cartasBaralho.Add(MakeCarta(flagMostra, i, false));
+        }
+
+        for(int i = 0; i < 2; i++) {
+            cartasBaralho.Add(MakeCarta(flagMostra, 0, true));
         }
     }
 
     /* Método que cria cada uma das cartas, e a mostra ou não */
-    private Carta MakeCarta(bool faceUp, int cNum) {
-        _tGO = Instantiate(prefabCarta) as GameObject; // Cria um novo GameObject Carta
+    private Carta MakeCarta(bool faceUp, int cNum, bool goldCard) {
+        if (!goldCard) _tGO = Instantiate(prefabCarta) as GameObject; // Cria um novo GameObject Carta
+        else _tGO = Instantiate(prefabCartaGold) as GameObject;
         _tGO.transform.parent = pivoBaralho; // Configura o transform.parent para o pivo da nova Carta
         _tSR = _tGO.GetComponent<SpriteRenderer>(); // pega o componente de renderização de Sprite
         // _tGO.transform.localPosition = new Vector3( cNum%13 *6 - 35, cNum/13* 8 - 10, 0); // Acerta a posição de exibição
@@ -69,7 +76,11 @@ public class Baralho : MonoBehaviour
         _carta.nome = "face";
         _tSp = (Sprite)(Resources.Load<Sprite>(nomeDaCarta)); // lê a carta dos arquivos
         Sprite s1back = (Sprite)(Resources.Load<Sprite>("Card_Back_1")); // lê a carta dos arquivos
-        _tSR.sprite = _tSp; // Add Carta com a Sprite lida
+        if (goldCard) {
+            _carta.cartaGold = true;
+        } else {
+            _tSR.sprite = _tSp;
+        } // Add Carta com a Sprite lida
         _tSR.sortingOrder = 2; // quanto maior for a sortingOrder, mais próximo a câmera é a renderização
         _tGO = Instantiate(prefabSprite) as GameObject; // Add Back ( traseira da carta)
         _tSR = _tGO.GetComponent<SpriteRenderer>();

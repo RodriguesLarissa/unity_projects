@@ -8,4 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Baralho.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Derrota.unity
+    guid: 16009729c4b766a4f8731cf419a931d9
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 7470dc14808d23945a80b22c77e0619c
+  - enabled: 1
+    path: Assets/Scenes/Inicio.unity
+    guid: a11275154034f914cbea21cddb5f0898
+  - enabled: 1
+    path: Assets/Scenes/Vitoria.unity
+    guid: 3609d13c94007e545a66baaaf99dc23b
+  - enabled: 1
+    path: Assets/Scenes/Vitoria.unity
+    guid: 1e8b8f681b363e44b805a64d6482d03e
+  - enabled: 1
+    path: Assets/Scenes/Pontuacao.unity
+    guid: bfada041244dca04c9520e85821d2742
   m_configObjects: {}

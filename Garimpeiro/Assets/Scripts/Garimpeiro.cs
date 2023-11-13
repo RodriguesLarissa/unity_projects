@@ -16,6 +16,7 @@ public class Garimpeiro : MonoBehaviour
     public bool startFaceUp = true;
     public Sprite cartaBack;
     public GameObject prefabCarta;
+    public GameObject prefabCartaGold;
     public GameObject prefabSprite;
 
     [Header("Set Dynamically")]
@@ -28,6 +29,11 @@ public class Garimpeiro : MonoBehaviour
     public CartaGarimpeiro target;
     public List<CartaGarimpeiro> tablado;
     public List<CartaGarimpeiro> descarte;
+    public bool modoGold = false;
+    public bool modoDuploGold = false;
+    public AudioClip musicaModoGold;
+    public AudioClip musicaModoDuploGold;
+    private AudioSource audioSource;
 
     void Awake() {
         S = this;
@@ -38,6 +44,7 @@ public class Garimpeiro : MonoBehaviour
         // Baralho.Embaralha(ref cartasBaralho);
         layout = GetComponent<Layout>();
         layout.ReadLayout(layoutXML.text);
+        audioSource = GetComponent<AudioSource>();
         monte = ConverteListCartasToListCartasGarimpeiro(baralho.cartasBaralho);
         LayoutGame();
     }
@@ -59,7 +66,7 @@ public class Garimpeiro : MonoBehaviour
             pivoBaralho.transform.position = layoutCenter;
         }
         CartaGarimpeiro cp; 
-        foreach (SlotDef tSD in layout.slotDefs) { 
+        foreach (SlotDef tSD in layout.slotDefs) {
             cp = Draw(); // Coloca a carta no topo do monte
             cp.faceUp = tSD.faceUp; // acerta faceup para o valor no SlotDef
             cp.transform.parent = pivoBaralho; // Torna-o pai de pivoBaralho
@@ -137,35 +144,42 @@ public class Garimpeiro : MonoBehaviour
     }
 
     public void CartaClicada(CartaGarimpeiro ct) {
-        switch (ct.state) {
-            case eCartaState.target:
-                break;
-            case eCartaState.monte:
-                MoveParaDescarte(target);
-                MoveParaTarget(Draw());
-                UpdateMonte();
-                ScoreManager.EVENT(eScoreEvent.monte);
-                break;
-            case eCartaState.tablado:
-                bool jogadaValida = true;
-                if (!ct.faceUp) {
-                    jogadaValida = false;
-                }
-                if(!ValorAjdacente(ct, target)) {
-                    jogadaValida = false;
-                }
-                if (!jogadaValida) return;
+        if (VerificaCartaGold(ct)) {
+            tablado.Remove(ct);
+            SetFacesTablado();
+            MoveParaDescarte(ct);
+        } else {
+            switch (ct.state) {
+                case eCartaState.target:
+                    break;
+                case eCartaState.monte:
+                    MoveParaDescarte(target);
+                    MoveParaTarget(Draw());
+                    UpdateMonte();
+                    ScoreManager.EVENT(eScoreEvent.monte);
+                    break;
+                case eCartaState.tablado:
+                    bool jogadaValida = true;
+                    if (!ct.faceUp) {
+                        jogadaValida = false;
+                    }
+                    if(!ValorAdjacente(ct, target)) {
+                        jogadaValida = false;
+                    }
+                    if (!jogadaValida) return;
 
-                tablado.Remove(ct);
-                MoveParaTarget(ct);
-                SetFacesTablado();
-                ScoreManager.EVENT(eScoreEvent.mina);
-                break;
+                    tablado.Remove(ct);
+                    MoveParaTarget(ct);
+                    SetFacesTablado();
+                    ScoreManager.EVENT(eScoreEvent.mina);
+                    break;
+            }
         }
         VerificaGameOver();
+
     }
 
-    public bool ValorAjdacente(CartaGarimpeiro c0, CartaGarimpeiro c1) {
+    public bool ValorAdjacente(CartaGarimpeiro c0, CartaGarimpeiro c1) {
         if (!c0.faceUp || !c1.faceUp) return(false);
         if(Mathf.Abs(c0.valor - c1.valor) == 1)
         {
@@ -173,7 +187,7 @@ public class Garimpeiro : MonoBehaviour
         }
 
         if(c0.valor == 1 && c1.valor == 13) return (true);
-        if(c0.valor == 13 && c1.valor == 11) return (true);
+        if(c0.valor == 13 && c1.valor == 1) return (true);
 
         return (false);
     }
@@ -199,7 +213,8 @@ public class Garimpeiro : MonoBehaviour
         }
     }
 
-     void VerificaGameOver() {
+    void VerificaGameOver() {
+        print(tablado.Count);
         if (tablado.Count == 0) {
             GameOver(true);
             return;
@@ -208,7 +223,7 @@ public class Garimpeiro : MonoBehaviour
             return;
         }
         foreach (CartaGarimpeiro ct in tablado) {
-            if (ValorAjdacente(ct, target)) {
+            if (ValorAdjacente(ct, target)) {
                 return;
             }
         }
@@ -219,10 +234,32 @@ public class Garimpeiro : MonoBehaviour
     void GameOver(bool won) {
         if (won) {
             ScoreManager.EVENT(eScoreEvent.gameVitoria);
+            SceneManager.LoadScene("Vitoria");
         }
         else {
             ScoreManager.EVENT(eScoreEvent.gameDerrota);
+            SceneManager.LoadScene("Derrota");
         }
-        SceneManager.LoadScene("GarimpeiroGameplay");
+    }
+
+    public bool VerificaCartaGold (CartaGarimpeiro ct) {
+        if (ct.cartaGold){
+            MoveParaDescarte(ct);
+            if (!modoGold) {
+                modoGold = true;
+                audioSource.clip = musicaModoGold;
+                audioSource.Play();
+                ScoreManager.EVENT(eScoreEvent.modoGold);
+            }
+            else {
+                modoDuploGold = true;
+                audioSource.clip = musicaModoDuploGold;
+                audioSource.Play();
+                ScoreManager.EVENT(eScoreEvent.modoDuploGold);
+            }
+            return true;
+        } else {
+            return false;
+        }
     }
 }
