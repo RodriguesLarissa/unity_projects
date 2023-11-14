@@ -881,13 +881,13 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: 2f7a9aef-926d-4a83-8232-53ee30fa2b19
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: RPG 2023-11-13_21-20-35
+  organizationId: lariii1999
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
